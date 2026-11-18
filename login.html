@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-tema="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login | PixelForge</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#login-email">Pular para o formulário</a>
+
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="./index.html">PIXELFORGE<span>.</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="./index.html">← Voltar ao início</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="login-main">
+    <section class="login-card">
+      <p class="label">Área do aluno</p>
+      <h1>Bem-vindo de <span>volta.</span></h1>
+      <p class="login-intro">Entre para continuar sua jornada no desenvolvimento de games.</p>
+
+      <form>
+        <div class="field">
+          <label for="login-email">E-mail</label>
+          <input id="login-email" type="email" placeholder="seu@email.com" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label for="login-password">Senha</label>
+          <input id="login-password" type="password" placeholder="Digite sua senha" autocomplete="current-password" minlength="6" required>
+        </div>
+
+        <label class="remember">
+          <input type="checkbox"> Lembrar de mim
+        </label>
+
+        <button class="button login-button" type="submit">Entrar na plataforma</button>
+      </form>
+
+      <p class="login-links">
+        <a href="#">Esqueci minha senha</a>
+      </p>
+      <p class="login-links">
+        Ainda não tem uma conta?
+        <a href="./index.html#contato">Fale com a nossa equipe</a>
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    © 2026 PixelForge Game School. Todos os direitos reservados.
+  </footer>
+
+  <!-- Aba de acessibilidade -->
+  <button class="a11y-toggle" type="button" aria-expanded="false" aria-controls="a11y-panel">
+    Acessibilidade
+  </button>
+
+  <div class="a11y-panel" id="a11y-panel" role="region" aria-label="Opções de acessibilidade" hidden>
+    <h2>Acessibilidade</h2>
+
+    <div class="a11y-group">
+      <p>Tema</p>
+      <button type="button" data-acao="tema"></button>
+    </div>
+
+    <div class="a11y-group">
+      <p>Tamanho da fonte: <span id="fonte-valor">100%</span></p>
+      <div class="a11y-row">
+        <button type="button" data-acao="menos" aria-label="Diminuir fonte">A−</button>
+        <button type="button" data-acao="normal" aria-label="Fonte padrão">A</button>
+        <button type="button" data-acao="mais" aria-label="Aumentar fonte">A+</button>
+      </div>
+    </div>
+
+    <div class="a11y-group">
+      <p>Visual</p>
+      <button type="button" data-acao="contraste" aria-pressed="false">Alto contraste</button>
+      <button type="button" data-acao="links" aria-pressed="false">Sublinhar links</button>
+    </div>
+
+    <button type="button" class="a11y-reset" data-acao="resetar">Restaurar padrão</button>
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+</html>
